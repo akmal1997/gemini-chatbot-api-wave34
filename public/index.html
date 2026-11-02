@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bustrip Planner Chatbot by #HOWAXTRIP</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Markdown & HTML Sanitizer libraries via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+</head>
+
+<body>
+  <div class="chat-wrapper">
+    <div class="container">
+      <!-- Modern Chat Header -->
+      <header class="chat-header">
+        <div class="brand">
+          <div class="brand-avatar">
+            <span class="avatar-icon">🚌</span>
+            <span class="status-dot" title="Online"></span>
+          </div>
+          <div class="brand-info">
+            <div class="brand-title-row">
+              <h1>Bustrip Planner</h1>
+              <span class="badge">#HOWAXTRIP</span>
+            </div>
+            <p class="brand-subtitle">Kevin McCallister • Your AI Intercity Travel Specialist</p>
+          </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </header>
+
+      <!-- Chat Messages Scroll Area -->
+      <div id="chat-box" class="chat-box">
+        <!-- Initial welcoming message -->
+        <div class="message bot">
+          <div class="message-meta">
+            <span class="sender-tag">Kevin McCallister</span>
+            <span class="time-tag">Just now</span>
+          </div>
+          <div class="message-content">
+            <p>Halo! Saya <strong>Kevin McCallister</strong>, travel specialist dari <strong>#HOWAXTRIP</strong> yang
+              siap mewujudkan impian perjalanan anda yang bebas dari gangguan teman usil seperti kiriman popmie Dower
+              atau GALON jika naik moda sebelah 🚌✨ (Seperti tagline dari kami, yaitu <strong>#HOWAXTRIP DIJAMIN
+                HOWAXXXX DAN
+                BEBAS GANGGUAN TEMAN USIL!</strong>)</p>
+            <p>Mau liburan atau road trip ke mana dan berapa lama? Beritahu saya kota tujuanmu, nanti saya buatkan
+              itinerary bus trip yang nyaman dan seru!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modern Floating Input Bar -->
+      <form id="chat-form">
+        <div class="input-wrapper">
+          <input type="text" id="user-input" placeholder="Ask about destination, schedule, or itineraries..."
+            autocomplete="off" required />
+          <button type="submit" id="send-btn" aria-label="Send message" title="Send message">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
